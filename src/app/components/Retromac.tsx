@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useScroll, useTransform, motion, useSpring, AnimatePresence } from "motion/react";
 import Timer from "./Timer";
 import Main from "./Main";
-import Hero from "./Hero";
 
 export const RetroMac = () => {
     const container = useRef(null);

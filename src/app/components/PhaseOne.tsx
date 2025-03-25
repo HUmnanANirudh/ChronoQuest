@@ -1,37 +1,4 @@
 "use client"
-import { motion } from "motion/react"
-
-const battles = [
-  { 
-    title: "Algorithmic Corruption", 
-    desc: "Solve 5 DSA problems.", 
-    era: "Dawn of AI",
-    difficulty: "Easy",
-    locked: false
-  },
-  { 
-    title: "IoT Manipulation", 
-    desc: "Complete 3 security challenges.", 
-    era: "Smart Age",
-    difficulty: "Medium",
-    locked: true
-  },
-  { 
-    title: "Cybersecurity Breach", 
-    desc: "Hack The Box private contest.", 
-    era: "Cybernetic Wars",
-    difficulty: "Hard",
-    locked: true
-  },
-  { 
-    title: "AI Deception", 
-    desc: "Compete in a Kaggle AI contest.", 
-    era: "AI Singularity",
-    difficulty: "Expert",
-    locked: true
-  }
-]
-
 const PhaseOne = () => {
   return (
     <section id="#Tournment" className="relative">
