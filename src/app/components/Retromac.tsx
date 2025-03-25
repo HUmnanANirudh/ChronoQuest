@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useScroll, useTransform, motion, useSpring, AnimatePresence } from "motion/react";
 import Timer from "./Timer";
 import Main from "./Main";
+import Hero from "./Hero";
 
 export const RetroMac = () => {
     const container = useRef(null);
@@ -86,7 +87,7 @@ export const RetroMac = () => {
                                     <div className="absolute inset-2 flex flex-col overflow-hidden">
                                         <div className="flex-1 bg-black p-2 text-green-500 font-mono text-xs sm:text-sm md:text-md lg:text-xl overflow-y-auto">
                                             <div className="flex flex-col justify-center gap-2 lg:gap-4">
-                                                <p className="whitespace-nowrap">{"> "}Initializing Event Countdown Systemundefined</p>
+                                                <p className="md:whitespace-nowrap">{"> "}Initializing Event Countdown Systemundefined</p>
 
                                                 <p>Event: ChronoQuest</p>
                                                 <p>Calculating time remaining...undefined</p>
@@ -120,8 +121,8 @@ export const RetroMac = () => {
                  initial={{ opacity: 0 }} 
                  animate={{ opacity: 1 }} 
                  exit={{ opacity: 0 }}
-                 transition={{ duration: 0.6,ease:"easeInOut" }}
-                 className="fixed inset-0 h-full w-full"
+                 transition={{ duration: 1,ease:"easeInOut" }}
+                 className="relative w-full h-[100vh]"
                >
                  <Main/>
                </motion.div>
