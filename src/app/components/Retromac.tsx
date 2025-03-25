@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useScroll, useTransform, motion, useSpring, AnimatePresence } from "motion/react";
 import Timer from "./Timer";
-import Hero from "./Hero";
 import Main from "./Main";
 // import Gallery from "./Gallery";
 
@@ -22,7 +21,6 @@ export const RetroMac = () => {
 
     const scale = useTransform(smoothscroll, [0, 1], [1, 7]);
     const fadeOut = useTransform(smoothscroll, [0.5, 1], [1, 0]);
-    const fadeIn = useTransform(smoothscroll, [0.4, 1], [0, 1]);
     const Bg = useTransform(smoothscroll, [0, 0.1], [1, 0])
 
     const [isZoomComple, setisZoomcomplete] = useState<boolean>(false)

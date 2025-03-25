@@ -1,10 +1,3 @@
-import { Press_Start_2P } from "next/font/google";
-
-const pressStart2p = Press_Start_2P({
-  weight: '400', 
-  subsets: ['latin'],
-});
-
 const Hero = () => {
     return (
         <div className="realtive min-h-screen flex justify-center items-center">

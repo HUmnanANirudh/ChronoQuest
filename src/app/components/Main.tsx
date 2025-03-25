@@ -2,7 +2,7 @@ import Hero from "./Hero"
 
 const Main = () =>{
     return (
-        <div className="">
+        <div>
         <Hero/>
         </div>
     )
