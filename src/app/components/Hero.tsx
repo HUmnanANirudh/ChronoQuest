@@ -6,7 +6,7 @@ const Hero = () => {
                 loop
                 muted
                 playsInline>
-                <source src={"/videos/4k_16.mp4"} type="video/mp4" />
+                <source src={"/4k_16.mp4"} type="video/mp4" />
             </video>
             <div className={`pressStart2p.className flex flex-col justify-center items-center gap-2 z-10`}> 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold py-2 tracking-wide">ChronoQuest</h1>

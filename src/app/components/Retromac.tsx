@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useScroll, useTransform, motion, useSpring, AnimatePresence } from "motion/react";
 import Timer from "./Timer";
 import Main from "./Main";
-// import Gallery from "./Gallery";
 
 export const RetroMac = () => {
     const container = useRef(null);
@@ -92,7 +91,7 @@ export const RetroMac = () => {
                                                 <p>Event: ChronoQuest</p>
                                                 <p>Calculating time remaining...undefined</p>
                                                 <Timer />
-                                                <span className="w-2 h-4 bg-green-500 animate-pulse"></span>
+                                                <span className="w-2 h-2 bg-green-500 animate-pulse"></span>
                                             </div>
                                         </div>
                                     </div>
