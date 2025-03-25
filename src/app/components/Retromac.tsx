@@ -70,7 +70,7 @@ export const RetroMac = () => {
                             <div className="bg-gray-900 p-2 rounded border-4 border-gray-800">
                                 {/* Screen displaying retro event text */}
                                 <div
-                                    className="relative bg-black rounded overflow-hidden h-[30vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh]"
+                                    className="relative bg-black rounded overflow-hidden h-[30vh] md:h-[40vh] lg:h-[40vh] xl:h-[42vh]"
                                     style={{ boxShadow: "inset 0 0 10px rgba(255,255,255,0.1)" }}
                                 >
                                     {/* Glare effect for screen */}
@@ -91,7 +91,7 @@ export const RetroMac = () => {
                                                 <p>Event: ChronoQuest</p>
                                                 <p>Calculating time remaining...undefined</p>
                                                 <Timer />
-                                                <span className="w-2 h-2 bg-green-500 animate-pulse"></span>
+                                                <span className="w-2 h-4 bg-green-500 animate-pulse"></span>
                                             </div>
                                         </div>
                                     </div>

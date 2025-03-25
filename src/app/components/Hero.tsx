@@ -5,8 +5,9 @@ const Hero = () => {
                 autoPlay
                 loop
                 muted
+                preload="auto"
                 playsInline>
-                <source src={"/4k_16.mp4"} type="video/mp4" />
+                <source src="https://static.videezy.com/system/resources/previews/000/043/225/original/4K_09.mp4" type="video/mp4" />
             </video>
             <div className={`pressStart2p.className flex flex-col justify-center items-center gap-2 z-10`}> 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold py-2 tracking-wide">ChronoQuest</h1>
