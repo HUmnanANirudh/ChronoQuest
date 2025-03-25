@@ -26,7 +26,7 @@ export const RetroMac = () => {
 
     useEffect(() => {
         const unsubscribe = smoothscroll.onChange((value) => {
-            if (value >= 0.9) {
+            if (value >= 1) {
                 setisZoomcomplete(true);
             } else {
                 setisZoomcomplete(false);
