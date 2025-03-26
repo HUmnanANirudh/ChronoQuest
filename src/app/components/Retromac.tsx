@@ -95,7 +95,7 @@ export const RetroMac = () => {
                                                 <div className="flex flex-col justify-center gap-2 lg:gap-4">
                                                     <p className="md:whitespace-nowrap">{"> "}Initializing Event Countdown System undefined</p>
 
-                                                    <p>Event: ChronoQuest</p>
+                                                    <p>Event: CHRONOQUEST</p>
                                                     <p>Calculating time remaining...undefined</p>
                                                     <Timer />
                                                     <span className="w-2 h-4 bg-green-500 animate-pulse"></span>
