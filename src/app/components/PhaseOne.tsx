@@ -1,10 +1,13 @@
 "use client";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 
 const PhaseOne = () => {
   const Text =
     "Unleash the power of technological rebellion. Navigate through critical domains, expose hidden manipulations, and challenge the very fabric of digital control.";
   const words = Text.split("");
+  const [Hoveredid,setIsHoveredid] = useState<number|null>(null);
+
 
   const Rooms = [
     {
@@ -15,6 +18,7 @@ const PhaseOne = () => {
     <path d="M7 8L10 11L7 14" stroke="#10B981" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
     <line x1="13" y1="14" x2="17" y2="14" stroke="#10B981" strokeWidth="2"/>
   </svg>`,
+  src:"https://i.gifer.com/33sc.gif"
     },
     {
       id: 2,
@@ -24,6 +28,7 @@ const PhaseOne = () => {
     <path d="M12 11V16" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round"/>
     <circle cx="12" cy="8" r="1" fill="#8B5CF6"/>
   </svg>`,
+  src:"https://i.gifer.com/33sc.gif"
     },
     {
       id: 3,
@@ -33,6 +38,7 @@ const PhaseOne = () => {
     <path d="M12 15V17" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round"/>
     <path d="M7 11V7C7 4.79 8.79 3 11 3H13C15.21 3 17 4.79 17 7V11" stroke="#EF4444" strokeWidth="2"/>
   </svg>`,
+  src:"https://i.gifer.com/33sc.gif"
     },
     {
       id: 4,
@@ -42,6 +48,7 @@ const PhaseOne = () => {
     <path d="M5 20C5 16.134 8.13401 13 12 13C15.866 13 19 16.134 19 20" stroke="#4ADE80" strokeWidth="2" fill="none"/>
     <path d="M12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5" stroke="#4ADE80" strokeWidth="2" fill="none"/>
   </svg>`,
+  src:"https://i.gifer.com/33sc.gif"
     },
   ];
 
@@ -82,11 +89,21 @@ const PhaseOne = () => {
           ))}
         </p>
         <div className="relative flex flex-col justify-center items-center my-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-4 w-full max-w-3xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 w-full gap-4">
             {Rooms.map((room) => (
-              <div
-                key={room.id}
-                className="relative bg-black border-2 z-10 rounded-lg py-4 px-6 flex flex-col sm:flex-row justify-center items-center border-green-900 hover:border-green-600 gap-2 transition-all duration-150 ease-in-out w-full"
+              <div key={room.id} className="flex flex-col justify-center items-center gap-4">
+                <img src={room.src} alt="Description of the GIF" />
+              <motion.div
+              initial={{opacity:0,x:-20,y:-40}}
+              whileInView={{opacity:1,x:0,y:0}}
+              viewport={{once:true}}
+              transition={{staggerChildren:0.5,delay:0.2*room.id}}
+                
+                className="relative bg-black border-2 overflow-visible z-20 rounded-lg py-4 px-6 flex flex-col sm:flex-row justify-center items-center border-green-900 hover:border-green-600 gap-2 transition-all duration-150 ease-in-out w-full"
+                onMouseEnter={()=>setIsHoveredid(room.id)}
+                onMouseLeave={()=>setIsHoveredid(null)}
+                onTouchStart={()=>setIsHoveredid(room.id)}
+                onTouchEnd={()=>setIsHoveredid(null)}
               >
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
@@ -99,17 +116,32 @@ const PhaseOne = () => {
                 <h1 className="text-sm sm:text-lg lg:text-2xl text-white text-center sm:text-left">
                   {room.Event}
                 </h1>
+                <AnimatePresence>
+                  {Hoveredid === room.id &&(
+                    <motion.div
+                    initial={{opacity:0,x:-20}}
+                    animate={{opacity:1,x:0}}
+                    transition={{duration:0.4,ease:"easeInOut"}}
+                    className="absolute z-[999] left-0 top-full mt-2 w-full">
+                      <div className="bg-white text-black z-50">
+                        <h1>Content Kitna batana hai edar</h1>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
               </div>
             ))}
           </div>
           <motion.button
-        className="bg-green-500 text-black px-3 my-auto sm:px-4 py-2 mt-4 font-bold text-sm sm:text-base hover:bg-green-400 
-        rounded transition-all duration-150 cursor-pointer"
+        className={`pressStart2p.className bg-green-500 text-black px-3 my-auto sm:px-4 py-2 mt-4 font-bold text-sm sm:text-base hover:bg-green-400 rounded transition-all duration-150 cursor-pointer flex`}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.7 }}
         transition={{type:"spring",duration:0.1}}
       >
-        Procced To Phase 2⚡
+        Procced To PHASE 2
+
+        <motion.span>⚡</motion.span>
       </motion.button>
         </div>
       </div>

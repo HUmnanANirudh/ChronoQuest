@@ -10,7 +10,7 @@ const Hero = () => {
                 playsInline>
                 <source src="https://static.videezy.com/system/resources/previews/000/043/225/original/4K_09.mp4" type="video/mp4" />
             </video>
-            <motion.div className={`pressStart2p.className flex flex-col justify-center items-center gap-2 z-10`}
+        <motion.div className={`pressStart2p.className flex flex-col justify-center items-center gap-2 z-10`}
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{ease:"easeIn",duration:1}}

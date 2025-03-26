@@ -5,6 +5,12 @@ const Terminal = () => {
 > A rogue AI, Kronos, is rewriting history.
 > Your mission: Stop it using decentralization.
 > Type 'ENTER' to join...`;
+ const ScrollToSection = (SectionId: string) =>{
+  const section = document.getElementById(SectionId);
+  if(section){
+    section.scrollIntoView({behavior:"smooth",block:"start"})
+  }
+ }
   return (
     <motion.div
       className="bg-black text-green-400 p-4 sm:p-6 md:p-8 border-2 border-green-500 font-mono shadow-lg 
@@ -30,7 +36,10 @@ const Terminal = () => {
         rounded transition-all duration-150 cursor-pointer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.7 }}
-        transition={{type:"spring",duration:0.1}}
+        transition={{type:"spring"}}
+        onClick={()=>{
+          ScrollToSection("Tournment")
+        }}
       >
         ENTER
       </motion.button>
