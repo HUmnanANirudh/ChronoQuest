@@ -1,7 +1,7 @@
 import {motion} from "motion/react"
 const Hero = () => {
     return (
-        <div className="realtive min-h-screen flex justify-center items-center">
+        <div className="relative min-h-screen flex justify-center items-center">
             <video className="absolute inset-0 w-full h-full object-cover z-0"
                 autoPlay
                 loop

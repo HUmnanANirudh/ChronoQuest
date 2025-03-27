@@ -25,23 +25,18 @@ export const RetroMac = () => {
     const [isZoomComple, setisZoomcomplete] = useState<boolean>(false)
 
     useEffect(() => {
-        // Use a direct comparison with the current value
         const handleScroll = () => {
             const currentValue = smoothscroll.get();
             setisZoomcomplete(currentValue >= 0.2);
         };
-
-        // Add event listener
         const unsubscribe = smoothscroll.on("change", handleScroll);
 
-        // Initial check
         handleScroll();
-
-        // Cleanup
         return () => {
             unsubscribe();
         };
     }, [smoothscroll]);
+    
     return (
         <div className="relative min-h-screen overflow-x-hidden" ref={container}>
             <motion.div
@@ -136,6 +131,5 @@ export const RetroMac = () => {
                 )}
             </AnimatePresence>
         </div>
-
     );
 };

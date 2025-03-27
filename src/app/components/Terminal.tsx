@@ -3,7 +3,7 @@ const Terminal = () => {
   const fullText = `> CHRONOQUEST INITIALIZED...
 > The year is undefined. The threat is imminent.
 > A rogue AI, Kronos, is rewriting history.
-> Your mission: Stop it using decentralization.
+> Your mission: Stop it using ZGVjZW50cmFsaXphdGlvbi4=
 > Type 'ENTER' to join...`;
  const ScrollToSection = (url:string) =>{
   window.open(url,"_blamk")
@@ -14,15 +14,16 @@ const Terminal = () => {
       max-w-lg w-full mx-auto mt-8 sm:mt-12 rounded-md"
       initial={{ x: "-100vw" }}
       animate={{ x: 0 }}
-      transition={{ type: "spring", stiffness: 70, damping: 20 }}
+      transition={{ type: "spring", stiffness:70, damping: 20 }}
     >
       <pre className="whitespace-pre-wrap text-xs sm:text-sm md:text-base leading-relaxed">
         {fullText.split("").map((char, index) => (
           <motion.span
             key={index}
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: index * 0.04 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{once:true}}
+            transition={{ delay: index * 0.01 }}
           >
             {char}
           </motion.span>
