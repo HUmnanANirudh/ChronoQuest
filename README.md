@@ -32,3 +32,9 @@ To restore balance, you must conquer four critical challenges:
  4. ML Deception – Lies spread like wildfire.
         Deepfakes, misinformation—truth itself is at risk. Can you cut
         through the noise and reveal reality?
+
+Master these domains, and you’ll face Phase 2—a top-secret final
+showdown. What’s waiting for you? No one knows. But one thing is
+clear: the fate of the timeline is in your hands.
+Are you ready to outthink Kronos and rewrite history?
+The clock is ticking…
