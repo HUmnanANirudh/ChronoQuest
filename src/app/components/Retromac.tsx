@@ -28,7 +28,7 @@ export const RetroMac = () => {
         // Use a direct comparison with the current value
         const handleScroll = () => {
             const currentValue = smoothscroll.get();
-            setisZoomcomplete(currentValue >= 0.5);
+            setisZoomcomplete(currentValue >= 0.2);
         };
 
         // Add event listener
