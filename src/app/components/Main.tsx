@@ -15,7 +15,7 @@ const pageVariants = {
         transition: {
             duration: 0.6,
             ease: "easeOut",
-            staggerChildren: 0.3 // Stagger child animations
+            staggerChildren: 0.3
         }
     },
     exit: { 

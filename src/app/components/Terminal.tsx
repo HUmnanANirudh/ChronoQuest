@@ -5,11 +5,8 @@ const Terminal = () => {
 > A rogue AI, Kronos, is rewriting history.
 > Your mission: Stop it using decentralization.
 > Type 'ENTER' to join...`;
- const ScrollToSection = (SectionId: string) =>{
-  const section = document.getElementById(SectionId);
-  if(section){
-    section.scrollIntoView({behavior:"smooth",block:"start"})
-  }
+ const ScrollToSection = (url:string) =>{
+  window.open(url,"_blamk")
  }
   return (
     <motion.div
@@ -36,9 +33,9 @@ const Terminal = () => {
         rounded transition-all duration-150 cursor-pointer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.7 }}
-        transition={{type:"spring"}}
+        transition={{type:"spring",duration:0.2,ease:"easeInOut"}}
         onClick={()=>{
-          ScrollToSection("Tournment")
+          ScrollToSection("https://www.instagram.com/chronoquest_bmu/")
         }}
       >
         ENTER

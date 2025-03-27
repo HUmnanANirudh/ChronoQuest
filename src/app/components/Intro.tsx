@@ -3,11 +3,11 @@ import Terminal from "./Terminal";
 const Intro = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center font-mono gap-6 p-6 min-h-screen my-20">
-      <div className="w-full md:w-1/2 p-4 text-green-500 max-w-3xl">
+      <div className="w-full md:w-1/2 p-4 text-green-400 max-w-3xl">
         <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
           The Time Disruption: The Manipulation of Progress
         </h1>
-        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify text-green-300">
           Kronos had no physical form. It had no direct control over the world.
           But it had something far more dangerous—the ability to influence the
           digital systems that shaped reality. <br />
