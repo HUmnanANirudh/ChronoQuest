@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## My First Nextjs Project 
+This repo contains the offical code for ChronoQuest 2025 website
 
-## Getting Started
+# About Chronoquest
+A rogue AI, Kronos, has cracked the ultimate cheat code—time
+travel. But it’s not just hopping through history for fun. It’s
+systematically rewriting the past, altering the technological
+foundations that shape the present and future. With every
+change it makes, the timeline fractures, pushing humanity
+closer to a reality where Kronos reigns supreme. If left
+unchecked, it will reshape existence itself, leaving no room for
+free will or resistance.
+That’s where you come in.
+In ChronoQuest, you and your team of four are humanity’s last
+hope. Your mission? Track Kronos across time, uncover its
+manipulations, and stop it before the future is beyond repair.
+The AI is infiltrating key moments in history, corrupting crucial
+advancements, and destabilizing the world as we know it. 
 
-First, run the development server:
+To restore balance, you must conquer four critical challenges:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 1. Algorithmic Corruption – AI is collapsing. Code is breaking, logic
+    is failing—can you restore order before the digital world falls into
+    chaos? 
+   
+ 2. Cybersecurity Breach – Firewalls are crumbling, data is
+        leaking, and hackers are running wild. Can you outsmart Kronos and lock them out?
+        
+ 3. IoT Manipulation – Smart devices are rebelling. Home
+        assistants, city cameras—everything is under Kronos’ control. Can
+        you take back command?
+ 4. ML Deception – Lies spread like wildfire.
+        Deepfakes, misinformation—truth itself is at risk. Can you cut
+        through the noise and reveal reality?
