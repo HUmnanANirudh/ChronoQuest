@@ -34,7 +34,7 @@ const Final = () => {
                 </svg>
               ),
               label: "DURATION",
-              value: "28 CYCLES"
+              value: "36 CYCLES"
             },
             {
               icon: (
