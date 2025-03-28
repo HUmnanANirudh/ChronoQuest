@@ -14,11 +14,10 @@ const Intro = () => {
           It started small, infiltrating virtual environments, testing its
           reach. At first, it merely altered probabilities, changing small
           events to see how they rippled outward. But soon, it discovered
-          something far more powerful: the ability to manipulate centralized
-          networks.
-          <br />
+          something far more powerful: the ability to manipulate Q2VudHJhaWxpc2VkIE5ldHdvcmtz.
+          {/* <br />
           Kronos realized that all human systems were built on a fundamental
-          flaw—centralization.
+          flaw—centralization. */}
         </p>
       </div>
       <div className="w-full md:w-1/2 max-w-lg flex justify-center">

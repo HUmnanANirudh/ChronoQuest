@@ -5,8 +5,8 @@ const Terminal = () => {
 > A rogue AI, Kronos, is rewriting history.
 > Your mission: Stop it using ZGVjZW50cmFsaXphdGlvbi4=
 > Type 'ENTER' to join...`;
- const ScrollToSection = (url:string) =>{
-  window.open(url,"_blamk")
+ const redirect =()=>{
+  window.open("https://unstop.com/hackathons/chronoquest-the-cyber-relic-hunt-bml-munjal-university-bmu-gurgaon-1448307","_blank")
  }
   return (
     <motion.div
@@ -35,9 +35,7 @@ const Terminal = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.7 }}
         transition={{type:"spring",duration:0.2,ease:"easeInOut"}}
-        onClick={()=>{
-          ScrollToSection("https://www.instagram.com/chronoquest_bmu/")
-        }}
+        onClick={redirect}
       >
         ENTER
       </motion.button>

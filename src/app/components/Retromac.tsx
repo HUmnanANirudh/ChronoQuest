@@ -88,9 +88,9 @@ export const RetroMac = () => {
                                         <div className="absolute inset-2 flex flex-col overflow-hidden">
                                             <div className="flex-1 bg-black p-2 text-green-500 font-mono text-xs sm:text-sm md:text-md lg:text-lg overflow-y-auto">
                                                 <div className="flex flex-col justify-center gap-2 lg:gap-4">
-                                                    <p>{"> "}Initializing Event Countdown System undefined</p>
-                                                    <p>Event: CHRONOQUEST</p>
-                                                    <p>Calculating time remaining...undefined</p>
+                                                    <p>{"> "}Initializing Event Countdown System</p>
+                                                    <p>Event: ChronoQuest</p>
+                                                    <p>Calculating time remaining</p>
                                                     <Timer />
                                                     <span className="w-2 h-4 bg-green-500 animate-pulse"></span>
                                                 </div>

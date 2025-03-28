@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Final = () => {
+  const redirect =()=>{
+    window.open("https://unstop.com/hackathons/chronoquest-the-cyber-relic-hunt-bml-munjal-university-bmu-gurgaon-1448307","_blank")
+   }
   return (
     <div className="max-w-4xl mx-auto bg-black text-green-300 font-mono text-center p-6 md:p-10 min-h-screen flex flex-col justify-center">
       <div className="space-y-6">
@@ -73,7 +76,8 @@ const Final = () => {
           transition-all duration-300 
           hover:scale-105 active:scale-95
           uppercase tracking-wider
-          focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 cursor-pointer">
+          focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 cursor-pointer"
+          onClick={redirect}>
           Initiate Recruitment Protocol
         </button>
 

@@ -20,9 +20,9 @@ const PhaseOne = () => {
 
   const finalMessage = (
     <>
-      ⚠️ Phase 2 Details Remain a Mystery - Only the Best Will Survive! ⚠️
+      Phase 2 Details Remain a Mystery - Only the Best Will Survive! 
       <br />
-      <strong>General Rules: Play smart. Play fair. Win together.</strong>
+      {/* <strong>General Rules: Play smart. Play fair. Win together.</strong> */}
     </>
   );
 
@@ -54,7 +54,7 @@ const PhaseOne = () => {
         <path d="M12 11V16" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round"/>
         <circle cx="12" cy="8" r="1" fill="#8B5CF6"/>
       </svg>`,
-      src: "https://i.gifer.com/33sc.gif",
+      src: "https://media.giphy.com/media/1679iPKc2ZP840Hxjp/giphy.gif",
     },
     {
       id: 3,
@@ -65,7 +65,7 @@ const PhaseOne = () => {
         <path d="M12 15V17" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round"/>
         <path d="M7 11V7C7 4.79 8.79 3 11 3H13C15.21 3 17 4.79 17 7V11" stroke="#EF4444" strokeWidth="2"/>
       </svg>`,
-      src: "https://i.gifer.com/33sc.gif",
+      src: "https://media.giphy.com/media/Ut9IfYd8U1C0CNQi76/giphy.gif",
     },
     {
       id: 4,
@@ -76,7 +76,7 @@ const PhaseOne = () => {
         <path d="M5 20C5 16.134 8.13401 13 12 13C15.866 13 19 16.134 19 20" stroke="#4ADE80" strokeWidth="2" fill="none"/>
         <path d="M12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5" stroke="#4ADE80" strokeWidth="2" fill="none"/>
       </svg>`,
-      src: "https://i.gifer.com/33sc.gif",
+      src: "https://media.giphy.com/media/pswcjOmDj4pIkUqikF/giphy.gif",
     },
   ];
 
@@ -185,11 +185,11 @@ const PhaseOne = () => {
             transition={{ duration: 0.9, delay: 1, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="relative max-w-md mx-auto mt-6 p-4 bg-black/60 border-2 border-green-400 text-white rounded shadow">
-            <p className="text-balance text-sm font-bold">
+            <p className="text-balance text-sm ">
               {showFinalMessage
                 ? finalMessage
                 : GenerateGlich(
-                  "📢 The top 40 teams from this phase will advance to Phase 2 where they will face even tougher challenges. Your performance in problem-solving, time management, and innovation counts!",
+                  "The top 30 teams from this phase will advance to Phase 2 where they will face even tougher challenges. Your performance in problem-solving, time management, and innovation counts!",
                   isGlitched
                 )
               }
@@ -203,7 +203,7 @@ const PhaseOne = () => {
             onClick={HandledClicked}
           >
             {isGlitched
-              ? GenerateGlich("Procced To PHASE 2", isGlitched) : "Procced To PHASE 2"
+              ? GenerateGlich("Procced To PHASE 2", isGlitched) : "Proceed To PHASE 2"
             }
 
             <motion.span>⚡</motion.span>
