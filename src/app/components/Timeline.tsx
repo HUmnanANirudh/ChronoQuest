@@ -154,7 +154,7 @@ export const Timeline = () => {
                 <motion.tbody variants={rowContainer}
                     initial="hidden"
                     animate="visible">
-                    {timelineEvents.map((event, i) => (
+                    {timelineEvents.map((event) => (
                         <motion.tr
                             key={`${event.date}-${event.event}`}
                             variants={rowItem}
