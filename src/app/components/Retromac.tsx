@@ -23,11 +23,14 @@ export const RetroMac = () => {
     const Bg = useTransform(smoothscroll, [0, 0.1], [1, 0])
 
     const [isZoomComple, setisZoomcomplete] = useState<boolean>(false)
-
+    const [HasScrolled,setHasScrolled] = useState<boolean>(false)
     useEffect(() => {
         const handleScroll = () => {
             const currentValue = smoothscroll.get();
             setisZoomcomplete(currentValue >= 0.2);
+            if (currentValue > 0.5) {
+                setHasScrolled(true);
+            }
         };
         const unsubscribe = smoothscroll.on("change", handleScroll);
 
@@ -114,6 +117,24 @@ export const RetroMac = () => {
                             </motion.div>
                         </motion.div>
                     </div>
+                )}
+            </AnimatePresence>
+            <AnimatePresence>
+                {!HasScrolled && (
+                    <motion.div 
+                        className="fixed bottom-10 left-0 right-0 flex justify-center z-20"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ delay: 1, duration: 0.5 }}
+                    >
+                        <div className="px-4 py-2 bg-black bg-opacity-70 text-white rounded-full flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                            Scroll to Enter
+                        </div>
+                    </motion.div>
                 )}
             </AnimatePresence>
 

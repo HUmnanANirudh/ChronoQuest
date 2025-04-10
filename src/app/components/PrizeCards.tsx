@@ -14,7 +14,7 @@ export const PrizesCard = ({ title, content, tagline }: Prizes) => {
         window.open("https://unstop.com/hackathons/chronoquest-the-cyber-relic-hunt-bml-munjal-university-bmu-gurgaon-1448307", "_blank")
     }
     return (
-        <div className="relative border-2 border-green-500 bg-green-950 font-mono w-[400px] m-4 shadow-md">
+        <div className="relative border-2 border-green-500 bg-green-950 w-full font-mono m-4 shadow-md">
             <div className="bg-green-700 absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-2 text-green-200 font-bold text-center uppercase">
                 {title}
             </div>

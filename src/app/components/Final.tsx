@@ -84,7 +84,7 @@ const Final = () => {
               className="bg-green-900/20 border border-green-600/30 rounded-lg p-4 text-center hover:bg-green-900/40 hover:scale-105 transition-all duration-300"
             >
               {item.icon}
-              <div className="text-green-300">
+              <div className="text-green-300 w-full">
                 <div className="text-xs uppercase tracking-wider text-green-500">{item.label}</div>
                 <div className="font-bold text-sm">{item.value}</div>
               </div>
