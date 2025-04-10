@@ -87,7 +87,7 @@ export const Timeline = () => {
 
     if (!AccessGranted) {
         return (
-            <div ref={ref} className="bg-black font-mono p-8 h-80 flex flex-col items-center justify-center text-green-500">
+            <div ref={ref} className="bg-black font-mono p-8 h-80 flex flex-col items-center justify-center text-green-500 my-10">
                 <h1 className="text-justify">Decrypting Temporal Data...</h1>
                 <motion.div
                     initial={{ width: 0 }}
@@ -101,7 +101,7 @@ export const Timeline = () => {
     }
 
     return (
-        <div className="bg-black font-mono p-8 text-white">
+        <div className="bg-black font-mono p-8 text-white my-20">
             <div className="border-b border-green-800 pb-2 mb-4">
                 <div className="text-green-600 text-md lg:text-xl font-bold flex items-center gap-3">
                     <motion.svg
