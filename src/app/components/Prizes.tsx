@@ -28,7 +28,7 @@ export const Prizes = () => {
             <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{once:true}}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
                 className="flex flex-col items-center font-mono my-10 text-center"
             >
@@ -41,11 +41,18 @@ export const Prizes = () => {
                     <div className="w-16 sm:w-20 h-px bg-green-400"></div>
                 </div>
             </motion.div>
+            <motion.h1 initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}
+                className=" text-green-400 text-md text-center sm:text-xl mb-4">
+                Complete. Win. Claim your rewards. Are you ready to unlock the vault?
+            </motion.h1>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{once:true}}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
                     <PrizesCard title="Phase 1" tagline="Prove your mastery" content={phase1} />
@@ -54,7 +61,7 @@ export const Prizes = () => {
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{once:true}}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
                     <PrizesCard title="Phase 2" tagline="Ultimate Showdown" content={phase2} />
@@ -63,7 +70,7 @@ export const Prizes = () => {
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{once:true}}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
                 className="relative bg-green-900 p-6 font-mono text-green-300 my-10 w-full max-w-3xl mx-auto"
             >
@@ -98,7 +105,7 @@ export const Prizes = () => {
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{once:true}}
+                viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
                 className="flex flex-col justify-center items-center text-center space-y-3 px-2"
             >
