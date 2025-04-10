@@ -1,22 +1,23 @@
 import React from 'react';
 
 const Final = () => {
-  const redirect =()=>{
-    window.open("https://unstop.com/hackathons/chronoquest-the-cyber-relic-hunt-bml-munjal-university-bmu-gurgaon-1448307","_blank")
-   }
+  const redirect = () => {
+    window.open("https://unstop.com/hackathons/chronoquest-the-cyber-relic-hunt-bml-munjal-university-bmu-gurgaon-1448307", "_blank")
+  }
   return (
-    <div className="max-w-4xl mx-auto bg-black text-green-300 font-mono text-center p-6 md:p-10 min-h-screen flex flex-col justify-center">
+    <div className="relative max-w-4xl mx-auto bg-black text-green-300 font-mono text-center p-6 md:p-10 min-h-screen flex flex-col justify-center">
       <div className="space-y-6">
         <h2 className="text-3xl md:text-5xl font-bold tracking-wider">
-          <span className="block text-green-400">CHRONOQUEST</span>
+          <span className="block text-green-400 text-3xl md:text-5xl">CHRONOQUEST</span>
           <span className="text-sm md:text-xl text-green-600 mt-2 block">
             TERMINAL ACCESS: FINAL REGISTRATION
           </span>
         </h2>
-
-        <p className="text-base md:text-xl max-w-2xl mx-auto mb-8">
-          <span className="text-red-500 font-bold">[SYSTEM ALERT]</span> Last chance to infiltrate and neutralize rogue AI Kronos. Recruit your elite cybernetic team before temporal cascade initiates.
-        </p>
+        <div className=" px-6 py-4 bg-red-900/20 border-l-4 border-red-500/20 text-left mb-6 mx-auto">
+          <p className="lg:text-lg">
+            <span className="text-red-500 font-bold">[SYSTEM ALERT]</span> Last chance to infiltrate and neutralize rogue AI Kronos. Recruit your elite cybernetic team before temporal cascade initiates.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-xl mx-auto">
           {[
@@ -70,33 +71,35 @@ const Final = () => {
             </div>
           ))}
         </div>
+                
+                <button 
+                  className="relative bg-green-800 text-green-300 px-8 py-3 rounded-full 
+                  border-2 border-green-600 
+                  uppercase tracking-wider cursor-pointer hover:bg-green-600 hover:text-green-200 transition-all ease-in-out duration-300 hover:scale-110"
+                  onClick={redirect}
+                >
+                  <span className="mr-2">»</span>
+                  Initiate Recruitment Protocol
+                  <span className="ml-2">«</span>
+                </button>
 
-        <button className="bg-green-800 text-green-300 px-8 py-3 rounded-full 
-          border-2 border-green-600 hover:bg-green-700 
-          transition-all duration-300 
-          hover:scale-105 active:scale-95
-          uppercase tracking-wider
-          focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 cursor-pointer"
-          onClick={redirect}>
-          Initiate Recruitment Protocol
-        </button>
-
-        <div className="mt-8 text-green-500">
-          <p className="text-sm md:text-base">
-            <strong>COMMS CHANNEL:</strong>{' '}
+        <div className="mt-8 text-green-500 border-t border-green-900 pt-6">
+          <p className="text-sm flex flex-col md:flex-row items-center justify-center gap-2">
+            <strong className="flex items-center">
+              <span className="mr-2"> ✉ </span>
+              COMMS CHANNEL:
+            </strong>{' '}
             <a
-              href="mailto:sourav.singh.23cse@bmu.edu.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-300 hover:text-green-100 
-              underline transition-colors duration-300"
+              href="#"
+              className="text-green-300 underline px-2 py-1 rounded"
             >
               sourav.singh.23cse@bmu.edu.in
             </a>
           </p>
+          <p className="text-xs mt-4 text-green-300">ENCRYPTION LEVEL: MAXIMUM | ACCESS: AUTHORIZED AGENTS ONLY</p>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 
