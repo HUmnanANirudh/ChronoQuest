@@ -10,16 +10,16 @@ interface TimelineEvent {
 }
 
 const timelineEvents: TimelineEvent[] = [
-    { date: "April 15", event: "Registration Deadline", time: "11:59 PM", special: false },
-    { date: "April 18", event: "Offline Check-in", time: "8:00 AM - 9:00 AM", special: false },
-    { date: "April 18", event: "Opening Ceremony", time: "9:00 AM - 10:00 AM", special: false },
-    { date: "April 18", event: "ChronoQuest - Phase 1", time: "11:00 AM – 3:30 PM", special: false },
-    { date: "April 18", event: "Networking Event", time: "4:30 PM – 6:00 PM", special: false },
-    { date: "April 18", event: "Tech Expo", time: "6:00 PM - 7:00 PM", special: false },
-    { date: "April 18", event: "Dinner", time: "7:00 PM - 9:00 PM", special: false },
-    { date: "April 18", event: "ChronoQuest - Phase 2 - ???", time: "9:00 PM -", special: true },
-    { date: "April 19", event: "Phase 2 - War Ends", time: "- 3:00 PM", special: true },
-    { date: "April 19", event: "Judging & Closing Ceremony", time: "4:00 PM – 6:00 PM", special: false }
+    { date: "Apr 15", event: "Registration Deadline", time: "23:59 GST", special: false },
+    { date: "Apr 18", event: "Offline Check-in", time: "08:00–09:00", special: false },
+    { date: "Apr 18", event: "Opening Ceremony", time: "9:00-10:00", special: false },
+    { date: "Apr 18", event: "ChronoQuest - Phase 1", time: "11:00–15:30", special: false },
+    { date: "Apr 18", event: "Networking Event", time: "6:30–18:00", special: false },
+    { date: "Apr 18", event: "Tech Expo", time: "18:00–19:00", special: false },
+    { date: "Apr 18", event: "Dinner", time: "19:00-21:00", special: false },
+    { date: "Apr 18", event: "ChronoQuest - Phase 2 - ???", time: "21:00-", special: true },
+    { date: "Apr 19", event: "Phase 2 - War Ends", time: "-15:00", special: true },
+    { date: "Apr 19", event: "Judging & Closing Ceremony", time: "16:00–6:00", special: false }
 ]
 
 export const Timeline = () => {
@@ -106,8 +106,8 @@ export const Timeline = () => {
                 <div className="text-green-600 text-md lg:text-xl font-bold flex items-center gap-3">
                     <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
+                        width="24"
+                        height="24"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -131,7 +131,7 @@ export const Timeline = () => {
                     </div>
                 </div>
                 <motion.div
-                    className="text-md lg:text-xl text-red-600 mt-4 animate-pulse text-justify"
+                    className="text-md lg:text-xl text-red-600 mt-4 animate-pulse text-center"
                     variants={warningVariant}
                     initial="hidden"
                     animate="visible"

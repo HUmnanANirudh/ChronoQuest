@@ -1,23 +1,40 @@
-import React from 'react';
+import { motion } from "motion/react"
 
 const Final = () => {
   const redirect = () => {
     window.open("https://unstop.com/hackathons/chronoquest-the-cyber-relic-hunt-bml-munjal-university-bmu-gurgaon-1448307", "_blank")
   }
   return (
-    <div className="relative max-w-4xl mx-auto bg-black text-green-300 font-mono text-center p-6 md:p-10 min-h-screen flex flex-col justify-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="relative max-w-4xl mx-auto bg-black text-green-300 font-mono text-center p-6 md:p-10 min-h-screen flex flex-col justify-center"
+    >
       <div className="space-y-6">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-wider">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{once:true}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-3xl md:text-5xl font-bold tracking-wider"
+        >
           <span className="block text-green-400 text-3xl md:text-5xl">CHRONOQUEST</span>
           <span className="text-sm md:text-xl text-green-600 mt-2 block">
             TERMINAL ACCESS: FINAL REGISTRATION
           </span>
-        </h2>
-        <div className=" px-6 py-4 bg-red-900/20 border-l-4 border-red-500/20 text-left mb-6 mx-auto">
+        </motion.h2>
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{once:true}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="px-6 py-4 bg-red-900/20 border-l-4 border-red-500/20 text-left mb-6 mx-auto"
+        >
           <p className="lg:text-lg">
             <span className="text-red-500 font-bold">[SYSTEM ALERT]</span> Last chance to infiltrate and neutralize rogue AI Kronos. Recruit your elite cybernetic team before temporal cascade initiates.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-xl mx-auto">
           {[
@@ -59,47 +76,54 @@ const Final = () => {
               value: "CRITICAL"
             }
           ].map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-green-900/20 border border-green-600/30 rounded-lg p-4 text-center transition-all duration-300 hover:bg-green-900/40 hover:scale-105"
+              initial={{ opacity: 0, scale: 0.1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6 + index * 0.2, duration: 0.5 }}
+              className="bg-green-900/20 border border-green-600/30 rounded-lg p-4 text-center hover:bg-green-900/40 hover:scale-105 transition-all duration-300"
             >
               {item.icon}
               <div className="text-green-300">
                 <div className="text-xs uppercase tracking-wider text-green-500">{item.label}</div>
                 <div className="font-bold text-sm">{item.value}</div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-                
-                <button 
-                  className="relative bg-green-800 text-green-300 px-8 py-3 rounded-full 
-                  border-2 border-green-600 
-                  uppercase tracking-wider cursor-pointer hover:bg-green-600 hover:text-green-200 transition-all ease-in-out duration-300 hover:scale-110"
-                  onClick={redirect}
-                >
-                  <span className="mr-2">»</span>
-                  Initiate Recruitment Protocol
-                  <span className="ml-2">«</span>
-                </button>
-
-        <div className="mt-8 text-green-500 border-t border-green-900 pt-6">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring",duration:0.4,ease:"easeInOut"}}
+          onClick={redirect}
+          className="relative bg-green-800 text-green-300 px-8 py-3 rounded-full 
+          border-2 border-green-600 
+          uppercase tracking-wider cursor-pointer hover:bg-green-600 hover:text-green-200 transition-all ease-in-out duration-300"
+        >
+          <span className="mr-2">»</span>
+          Initiate Recruitment Protocol
+          <span className="ml-2">«</span>
+        </motion.button>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{once:true}}
+          className="mt-8 text-green-500 border-t border-green-900 pt-6"
+        >
           <p className="text-sm flex flex-col md:flex-row items-center justify-center gap-2">
             <strong className="flex items-center">
               <span className="mr-2"> ✉ </span>
               COMMS CHANNEL:
-            </strong>{' '}
-            <a
-              href="#"
-              className="text-green-300 underline px-2 py-1 rounded"
-            >
+            </strong>
+            <a href="#" className="text-green-300 underline px-2 py-1 rounded">
               sourav.singh.23cse@bmu.edu.in
             </a>
           </p>
           <p className="text-xs mt-4 text-green-300">ENCRYPTION LEVEL: MAXIMUM | ACCESS: AUTHORIZED AGENTS ONLY</p>
-        </div>
+        </motion.div>
       </div>
-      </div>
+    </motion.div>
   );
 };
 
