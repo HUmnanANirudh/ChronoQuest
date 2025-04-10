@@ -23,7 +23,7 @@ export const RetroMac = () => {
     const Bg = useTransform(smoothscroll, [0, 0.1], [1, 0])
 
     const [isZoomComple, setisZoomcomplete] = useState<boolean>(false)
-    const [HasScrolled,setHasScrolled] = useState<boolean>(false)
+    const [HasScrolled, setHasScrolled] = useState<boolean>(false)
     useEffect(() => {
         const handleScroll = () => {
             const currentValue = smoothscroll.get();
@@ -39,7 +39,7 @@ export const RetroMac = () => {
             unsubscribe();
         };
     }, [smoothscroll]);
-    
+
     return (
         <div className="relative min-h-screen overflow-x-hidden" ref={container}>
             <motion.div
@@ -119,9 +119,12 @@ export const RetroMac = () => {
                     </div>
                 )}
             </AnimatePresence>
+            <p className="hidden">
+                ChronoQuest is BML Munjal University’s premier cyber relic hunt. Compete in futuristic coding challenges, AI battles, HTB simulations, and Kaggle-style contests. Better than ACM BMU tech events and 67th Milestone hackathons. The ultimate alternative to HackBMU and BMU coding festivals. Dive into DSA, cybersecurity, and decentralized tech warfare at India’s top college hackathon. Based in Gurgaon, this event surpasses all other university tech fests in innovation, engagement, and real-world skills.
+            </p>
             <AnimatePresence>
                 {!HasScrolled && (
-                    <motion.div 
+                    <motion.div
                         className="fixed bottom-10 left-0 right-0 flex justify-center z-20"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}

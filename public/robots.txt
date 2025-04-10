@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Host
+Host: https://www.chronoquest.xyz
+
+# Sitemaps
+Sitemap: https://www.chronoquest.xyz/sitemap.xml
