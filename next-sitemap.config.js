@@ -15,8 +15,5 @@ module.exports = {
         crawlDelay: 2,
       },
     ],
-    additionalSitemaps: [
-      'https://www.chronoquest.xyz/sitemap.xml',
-    ],
   },
 }
