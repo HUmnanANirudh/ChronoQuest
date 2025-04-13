@@ -8,6 +8,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn-icons-png.flaticon.com", 
       },
+      {
+        protocol: "https",
+        hostname: "i.gifer.com",
+      },
+      {
+        protocol: "https",
+        hostname: "media.giphy.com",
+      },
     ]
   }
 };

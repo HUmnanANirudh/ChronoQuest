@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 import { useState } from "react";
 
 const GenerateGlich = (text: string, isGlitched: boolean) => {
@@ -130,9 +131,11 @@ const PhaseOne = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 w-full gap-4 max-w-6xl mx-auto">
             {Rooms.map((room) => (
               <div key={room.id} className="flex flex-col justify-center items-center gap-4">
-                <img
+                <Image
                   src={room.src}
                   alt="Description of the GIF"
+                  width={100}
+                  height={100}
                   className="w-12 md:w-16 lg:w-20"
                 />
                 <motion.div

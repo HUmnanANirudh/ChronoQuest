@@ -30,7 +30,8 @@ export const metadata: Metadata = {
     "futuristic coding challenge", "DSA challenge", "Kaggle competition", "HTB BMU",
     "AI battle", "decentralized tech", "cybersecurity tournament", "tech war BMU",
     "chronoquest", "student tech fest", "college hackathon India",
-    "tech showdown BMU"
+    "tech showdown BMU","CTF BMU", "AI coding event India", "Hackathons near Gurgaon", 
+    "Cybersecurity coding challenge", "ChronoQuest 2025", "Tech events April 2025"
   ],
   metadataBase: new URL("https://www.chronoquest.xyz"),
   authors: [{ name: "ChronoQuest Team" }],
@@ -48,14 +49,7 @@ export const metadata: Metadata = {
     images: ["https://www.chronoquest.xyz/android-chrome-512x512.png"],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "ChronoQuest | The Cyber Relic Hunt",
-    description:
-      "Unleash your inner coder at BML Munjal University. Compete in ChronoQuest’s dystopian tech war and dominate the digital battlefield.",
-    images: ["https://www.chronoquest.xyz/android-chrome-512x512.png"],
-  },
-};
+}
 
 
 export default function RootLayout({

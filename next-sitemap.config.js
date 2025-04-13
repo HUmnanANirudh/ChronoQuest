@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: 'https://www.chronoquest.xyz',
   generateRobotsTxt: true,
-  generateIndexSitemap: true,
+  generateIndexSitemap: false,
   changefreq: 'daily',
   priority: 1.0,
   sitemapSize: 1000,
