@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.chronoquest.xyz"),
   authors: [{ name: "ChronoQuest Team" }],
   robots: "index, follow",
+  icons: {
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "ChronoQuest | Cyber Relic Hunt at BMU",
     description:
@@ -51,6 +56,7 @@ export const metadata: Metadata = {
     images: ["https://www.chronoquest.xyz/android-chrome-512x512.png"],
   },
 };
+
 
 export default function RootLayout({
   children,

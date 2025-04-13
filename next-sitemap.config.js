@@ -2,10 +2,11 @@
 module.exports = {
   siteUrl: 'https://www.chronoquest.xyz',
   generateRobotsTxt: true,
+  generateIndexSitemap: true,
   changefreq: 'daily',
   priority: 1.0,
-  exclude: ['/404', '/server-error'],
   sitemapSize: 1000,
+  exclude: ['/404', '/server-error'],
   robotsTxtOptions: {
     policies: [
       {
@@ -14,5 +15,8 @@ module.exports = {
         crawlDelay: 2,
       },
     ],
+    additionalSitemaps: [
+      'https://www.chronoquest.xyz/sitemap.xml',
+    ],
   },
-};
+}
