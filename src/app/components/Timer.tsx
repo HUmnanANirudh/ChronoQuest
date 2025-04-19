@@ -31,6 +31,10 @@ const Timer = () => {
       setHour(0);
       setMin(0);
       setSec(0);
+      prevDay.current = 0;
+      prevHour.current = 0;
+      prevMin.current = 0;
+      prevSec.current = 0;
     }
 
     if (NewDay !== prevDay.current) {
